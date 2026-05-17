@@ -1,0 +1,6 @@
+controlador\AnalizadorNutricional.class
+com\mycompany\nutrialert\NutriAlert.class
+modelo\Alimento.class
+controlador\CatalogoAlimentos.class
+modelo\Usuario.class
+modelo\ConsumoAlimento.class
