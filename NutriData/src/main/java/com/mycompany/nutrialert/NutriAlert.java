@@ -126,7 +126,5 @@ public class NutriAlert {
             JOptionPane.showMessageDialog(null, "Ocurrió un error. " + e.getMessage());
             
         }                                                                                                
-    {
-        print("Gracias por usar NutriData");
     }
 }
