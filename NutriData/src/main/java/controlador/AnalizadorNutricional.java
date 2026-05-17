@@ -157,10 +157,5 @@ public class AnalizadorNutricional {
         
     
     }
-
-    {
-        System.out.println(Eroror);
-    }
-
-    
+        
 }
