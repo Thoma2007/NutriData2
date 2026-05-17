@@ -110,14 +110,21 @@ public class NutriAlert {
                 
                 //Mostrar el catalogo
                 JOptionPane.showMessageDialog(null, scroll, "CATALOGO DE ALIMENTOS", JOptionPane.INFORMATION_MESSAGE);
+                int opcionAlimento = 0;
                 while (true) {
                     try {
-                        int opcionAlimento = Integer.parseInt(JOptionPane.showInputDialog("Seleccione un número de alimento"));
-                        break;
+                        opcionAlimento = Integer.parseInt(JOptionPane.showInputDialog("Seleccione un número de alimento"));
+                        
+                        // Validar que el número corresponda a un alimento de la lista
+                        if (opcionAlimento >= 1 && opcionAlimento <= alimentos.size()) {
+                            break; 
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Error: El número seleccionado no está en el catálogo.", "Rango Inválido", JOptionPane.ERROR_MESSAGE);
+                        }
                     } catch (NumberFormatException e) {
-                        JOptionPane.showMessageDialog(null, "Error: Debe ingresar un valor numérico válido dentro de la lista de alimentos", "Dato Inválido", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Error: Debe ingresar un número entero.", "Dato Inválido", JOptionPane.ERROR_MESSAGE);
                     }
-                }              
+                }            
                 
                 //Seleccionar el alimento
                 Alimento alimento = alimentos.get(opcionAlimento - 1);
