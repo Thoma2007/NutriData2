@@ -44,9 +44,32 @@ public class NutriAlert {
         
             //Almacenamos la informacion del cliente
             usuario.setNombre(JOptionPane.showInputDialog("Ingrese el nombre del usuario: "));
-            usuario.setEdad(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad:")));
-            usuario.setPeso(Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso: ")));
-            usuario.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura: ")));
+            while(true){
+                try {
+                    usuario.setEdad(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad:")));
+                    break;
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Error: Debe ingresar un número entero para la edad.", "Dato invalido", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+
+            while (true) {
+                try {
+                    usuario.setPeso(Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso: ")));
+                    break;
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Error: Debe ingresar un valor numérico válido para el peso (Ej: 70.5).", "Dato Inválido", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+            
+            while (true) {
+                try {
+                    usuario.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura: ")));
+                    break;
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Error: Debe ingresar un valor numérico válido para la altura (Ej: 1.75).", "Dato Inválido", JOptionPane.ERROR_MESSAGE);
+                }
+            }
         
             //Creamos el ArrayList para registrar todos los consumos del usuario
         
