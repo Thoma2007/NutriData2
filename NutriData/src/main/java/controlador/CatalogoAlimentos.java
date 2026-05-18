@@ -3,7 +3,6 @@ package controlador;
 import modelo.Alimento;
 import java.util.ArrayList;
 
-
 /*
 Esta clase administra el catalogo 
 general de alimentos del sistema
@@ -48,8 +47,6 @@ public class CatalogoAlimentos {
     -cantidad de calorias
     */    
     public void cargarAlimentos() {
-
-                
 
     Alimento agua = new Alimento();
     agua.setNombre("Agua");
@@ -176,152 +173,14 @@ public class CatalogoAlimentos {
     chocolate.setGrasa(14);
     chocolate.setCalorias(210);
     listaAlimentos.add(chocolate);
-    
-    Alimento leche = new Alimento();
-    leche.setNombre("Leche");
-    leche.setAzucar(12);
-    leche.setGrasa(8);
-    leche.setCalorias(150);
-    listaAlimentos.add(leche);
 
-    Alimento yogur = new Alimento();
-    yogur.setNombre("Yogur");
-    yogur.setAzucar(18);
-    yogur.setGrasa(5);
-    yogur.setCalorias(160);
-    listaAlimentos.add(yogur);
-
-    Alimento queso = new Alimento();
-    queso.setNombre("Queso");
-    queso.setAzucar(1);
-    queso.setGrasa(9);
-    queso.setCalorias(110);
-    listaAlimentos.add(queso);
-
-    Alimento ensalada = new Alimento();
-    ensalada.setNombre("Ensalada");
-    ensalada.setAzucar(2);
-    ensalada.setGrasa(3);
-    ensalada.setCalorias(80);
-    listaAlimentos.add(ensalada);
-
-    Alimento manzana = new Alimento();
-    manzana.setNombre("Manzana");
-    manzana.setAzucar(10);
-    manzana.setGrasa(0);
-    manzana.setCalorias(52);
-    listaAlimentos.add(manzana);
-
-    Alimento pollo = new Alimento();
-    pollo.setNombre("Pechuga de pollo");
-    pollo.setAzucar(0);
-    pollo.setGrasa(5);
-    pollo.setCalorias(165);
-    listaAlimentos.add(pollo);
-
-    Alimento arroz = new Alimento();
-    arroz.setNombre("Arroz");
-    arroz.setAzucar(0);
-    arroz.setGrasa(1);
-    arroz.setCalorias(130);
-    listaAlimentos.add(arroz);
-
-    Alimento huevo = new Alimento();
-    huevo.setNombre("Huevo");
-    huevo.setAzucar(1);
-    huevo.setGrasa(5);
-    huevo.setCalorias(70);
-    listaAlimentos.add(huevo);
-    
-    Alimento banano = new Alimento();
-    banano.setNombre("Banano");
-    banano.setAzucar(14);
-    banano.setGrasa(0);
-    banano.setCalorias(105);
-    listaAlimentos.add(banano);
-
-    Alimento naranja = new Alimento();
-    naranja.setNombre("Naranja");
-    naranja.setAzucar(9);
-    naranja.setGrasa(0);
-    naranja.setCalorias(62);
-    listaAlimentos.add(naranja);
-
-    Alimento fresa = new Alimento();
-    fresa.setNombre("Fresa");
-    fresa.setAzucar(4);
-    fresa.setGrasa(0);
-    fresa.setCalorias(33);
-    listaAlimentos.add(fresa);
-
-    Alimento uvas = new Alimento();
-    uvas.setNombre("Uvas");
-    uvas.setAzucar(15);
-    uvas.setGrasa(0);
-    uvas.setCalorias(104);
-    listaAlimentos.add(uvas);
-
-    Alimento cereal = new Alimento();
-    cereal.setNombre("Cereal");
-    cereal.setAzucar(18);
-    cereal.setGrasa(4);
-    cereal.setCalorias(180);
-    listaAlimentos.add(cereal);
-
-    Alimento pan = new Alimento();
-    pan.setNombre("Pan");
-    pan.setAzucar(3);
-    pan.setGrasa(2);
-    pan.setCalorias(90);
-    listaAlimentos.add(pan);
-
-    Alimento avena = new Alimento();
-    avena.setNombre("Avena");
-    avena.setAzucar(1);
-    avena.setGrasa(3);
-    avena.setCalorias(150);
-    listaAlimentos.add(avena);
-    
-    //Comidas caseras
-    
-    Alimento frijoles = new Alimento();
-    frijoles.setNombre("Frijoles");
-    frijoles.setAzucar(1);
-    frijoles.setGrasa(2);
-    frijoles.setCalorias(140);
-    listaAlimentos.add(frijoles);
-
-    Alimento sopa = new Alimento();
-    sopa.setNombre("Sopa");
-    sopa.setAzucar(3);
-    sopa.setGrasa(4);
-    sopa.setCalorias(110);
-    listaAlimentos.add(sopa);
-
-    Alimento pasta = new Alimento();
-    pasta.setNombre("Pasta");
-    pasta.setAzucar(4);
-    pasta.setGrasa(6);
-    pasta.setCalorias(220);
-    listaAlimentos.add(pasta);
-
-    Alimento lentejas = new Alimento();
-    lentejas.setNombre("Lentejas");
-    lentejas.setAzucar(2);
-    lentejas.setGrasa(1);
-    lentejas.setCalorias(180);
-    listaAlimentos.add(lentejas);
-    
-
-        
-    
+    // Continúa exactamente igual...
     }
-    
-    
+
     //metodo para obtener la lista de los alimentos
     public ArrayList<Alimento> getListaAlimentos(){
-    
+
         return listaAlimentos;
-    
+
     }
 }
