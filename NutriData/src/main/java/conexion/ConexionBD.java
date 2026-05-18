@@ -6,20 +6,16 @@ import java.sql.SQLException;
 
 public class ConexionBD {
 
-    // URL de conexión SQL Server
     private static final String URL =
             "jdbc:sqlserver://localhost:1433;"
             + "databaseName=NutriAlertasDB;"
             + "encrypt=true;"
             + "trustServerCertificate=true";
 
-    // Usuario SQL Server
     private static final String USER = "sa";
 
-    // Contraseña SQL Server
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "1234";
 
-    // Método de conexión
     public static Connection conectar() {
 
         Connection con = null;
@@ -32,12 +28,16 @@ public class ConexionBD {
                     PASSWORD
             );
 
-            System.out.println("Conexion exitosa con SQL Server");
+            System.out.println(
+                    "Conexion exitosa con SQL Server"
+            );
 
         } catch (SQLException e) {
 
-            System.out.println("Error de conexion: "
-                    + e.getMessage());
+            System.out.println(
+                    "Error de conexion: "
+                    + e.getMessage()
+            );
         }
 
         return con;
