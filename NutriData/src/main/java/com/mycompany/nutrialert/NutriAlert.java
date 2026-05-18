@@ -135,7 +135,14 @@ public class NutriAlert {
                 //Guardamos los datos del consumo del usuario
                 consumo.setUsuario(usuario);
                 consumo.setAlimento(alimento);
-                consumo.setCantidad(Integer.parseInt(JOptionPane.showInputDialog("Cantidad: ")));
+                while (true) {
+                    try {
+                        consumo.setCantidad(Integer.parseInt(JOptionPane.showInputDialog("Cantidad: ")));
+                        break;
+                    } catch (NumberFormatException e) {
+                        JOptionPane.showMessageDialog(null, "Error: Debe ingresar un número entero.", "Dato Inválido", JOptionPane.ERROR_MESSAGE);
+                    }
+                }
                 consumo.setTipoComida(JOptionPane.showInputDialog("Tipo de comida: "));
                 consumo.setFecha(JOptionPane.showInputDialog("Fecha: "));
                 
