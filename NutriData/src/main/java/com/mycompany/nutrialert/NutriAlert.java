@@ -222,8 +222,7 @@ public class NutriAlert {
 
             } while (continuarUsuarios == JOptionPane.YES_OPTION);
 
-            JOptionPane.showMessageDialog(null, "Nospi...");
-
+            JOptionPane.showMessageDialog(null, "Gracias por usar NutriData. \nNospi...");
             
         } catch (Exception e) {
 
