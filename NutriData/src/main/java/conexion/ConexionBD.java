@@ -28,16 +28,11 @@ public class ConexionBD {
                     PASSWORD
             );
 
-            System.out.println(
-                    "Conexion exitosa con SQL Server"
-            );
+            System.out.println("Conexion exitosa con SQL Server");
 
         } catch (SQLException e) {
 
-            System.out.println(
-                    "Error de conexion: "
-                    + e.getMessage()
-            );
+            System.out.println("Error de conexion: " + e.getMessage());
         }
 
         return con;
